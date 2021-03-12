@@ -28,5 +28,5 @@ int main()
     TEST(voyelles("abezi")  == 3);
     TEST(voyelles("banane") == 3);
 
-    return 0;
+    return tests_executed - tests_successful;
 }
