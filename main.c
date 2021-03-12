@@ -5,6 +5,20 @@ int const test_column_width = 40;
 
 int voyelles(char const* texte)
 {
+    int v = 0;
+    for(; *texte; ++texte)
+    {
+        switch(*texte)
+        {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                ++v;
+                break;
+        }
+    }
 
     return 0;
 }
@@ -17,7 +31,7 @@ int main()
     TEST(voyelles("bcdf")       == 0);
     TEST(voyelles("@*((^353")   == 0);
 
-    TEST(voyelles("a")  == 1);
+    TEST(voyelles("a")      == 1);
     TEST(voyelles("aaa")    == 3);
     TEST(voyelles("aei")    == 3);
     TEST(voyelles("aeiouy") == 6);
