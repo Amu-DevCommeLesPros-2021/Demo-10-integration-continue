@@ -22,7 +22,7 @@ int voyelles(char const* texte)
         }
     }
 
-    return 0;
+    return v;
 }
 
 int main()
