@@ -3,6 +3,7 @@
 int const tests_total = 14;
 int const test_column_width = 40;
 
+// Compte le nombre de voyelles dans la chaîne donnée.
 int voyelles(char const* texte)
 {
 
