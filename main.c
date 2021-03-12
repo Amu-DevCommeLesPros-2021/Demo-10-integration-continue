@@ -5,23 +5,8 @@ int const test_column_width = 40;
 
 int voyelles(char const* texte)
 {
-    int v = 0;
-    for(; *texte; ++texte)
-    {
-        switch(*texte)
-        {
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
-            case 'y':
-                ++v;
-                break;
-        }
-    }
 
-    return v;
+    return 0;
 }
 
 int main()
