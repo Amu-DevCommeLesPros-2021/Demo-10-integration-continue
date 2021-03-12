@@ -15,6 +15,7 @@ int voyelles(char const* texte)
             case 'i':
             case 'o':
             case 'u':
+            case 'y':
                 ++v;
                 break;
         }
